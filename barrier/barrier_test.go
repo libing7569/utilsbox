@@ -30,7 +30,7 @@ func TestBarrier(t *testing.T) {
 	fmt.Println(tmp, len(tmp))
 	for i := 0; i < 100; i++ {
 		if tmp[i] != byte('1') || tmp[100+i] != byte('2') {
-			t.Error("error 1")
+			t.Error("check error")
 		}
 	}
 }
